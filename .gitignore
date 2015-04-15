@@ -47,3 +47,6 @@ Mine/Release/
 Mine.sdf
 Debug/
 Release/
+Mine.opensdf
+*.suo
+*.filters
