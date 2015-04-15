@@ -31,6 +31,12 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="GetMessage.hpp" />
+		<Unit filename="IOControl.cpp" />
+		<Unit filename="IOControl.hpp" />
+		<Unit filename="Render.hpp" />
+		<Unit filename="Tile.hpp" />
+		<Unit filename="source.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
