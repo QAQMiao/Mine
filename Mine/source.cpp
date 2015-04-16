@@ -2,6 +2,7 @@
 #include <windows.h>
 #include <vector>
 #include "IOControl.hpp"
+#include "Texture.hpp"
 using namespace std;
 
 struct point
@@ -25,6 +26,7 @@ void Render(HDC buf);
 int main()
 {
 	HINSTANCE hInstance = GetModuleHandle(NULL);
+	MEOM::Texture tt;
 
     if(FAILED(InitWindow(hInstance, true)))
         return 0;
