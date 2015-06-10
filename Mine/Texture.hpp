@@ -16,12 +16,12 @@ namespace MEOM
 			GetObject(bitmap, sizeof(BITMAP), reinterpret_cast<LPBYTE>(&bmpHeader));
 		}
 		~Texture(){}
-		void renderTextureOnDc(HWND hwnd,HDC dc,const Point& p)
+		void renderTextureOnDc(HDC dc,const Point& p) const
 		{
 			HDC tmpDc = CreateCompatibleDC(nullptr);
 			SelectObject(tmpDc, bitmap);
 			BitBlt(dc, p.x, p.y, 35, 35, tmpDc, 0, 0, SRCCOPY);
-			ReleaseDC(hwnd, tmpDc);
+			DeleteDC(tmpDc);
 		}
 	private:
 		int width;

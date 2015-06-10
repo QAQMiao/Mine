@@ -68,17 +68,14 @@
     <ClInclude Include="IOControl.hpp" />
     <ClInclude Include="MouseStatus.hpp" />
     <ClInclude Include="Point.hpp" />
-    <ClInclude Include="Render.hpp" />
-    <ClInclude Include="resource.h" />
+    <ClInclude Include="Renderer.hpp" />
     <ClInclude Include="Texture.hpp" />
     <ClInclude Include="Tile.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="IOControl.cpp" />
+    <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="source.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="Mine.rc" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="bitmap1.bmp" />
